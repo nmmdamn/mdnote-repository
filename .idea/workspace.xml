@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="26a10f3a-2a9f-49de-8c55-6780834ef365" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/js/note-common-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/doroxx.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250705195853.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250705195942.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250705195952.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250705195958.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250705200003.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250705200008.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/CloudflareR2图片服务配置笔记md.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/CloudflareR2图片服务配置笔记md.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/windos局域网共享目录md.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/windos局域网共享目录md.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.9.5" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.9.5\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2zSF5Ri9kWydK8mvMR4CU0lSd7r" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "E:/IDEAEXC/mdnote-repository/public/notes",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEAEXC\mdnote-repository\public\notes" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\resuorce\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IDEAEXC\mdnote-repository\public" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\notes\html" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\notes" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\resuorce\img\dror" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="26a10f3a-2a9f-49de-8c55-6780834ef365" name="Changes" comment="" />
+      <created>1713498433422</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1713498433422</updated>
+      <workItem from="1751716386213" duration="11281000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -1,0 +1,109 @@
+/* 侧边导航栏样式 */
+.sidebar-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: #f8f9fa;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #e3e3e3;
+  z-index: 1000;
+}
+
+.sidebar-nav h3 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 10px;
+  margin-left: 0;
+}
+
+.sidebar-nav ul ul {
+  padding-left: 15px;
+}
+
+.sidebar-nav li {
+  padding: 3px 0;
+  margin-left: 0;
+}
+
+.sidebar-nav a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar-nav a:hover {
+  background: #e9ecef;
+  border-radius: 5px;
+}
+
+.sidebar-nav .has-children > a::after {
+  content: "▾";
+  margin-left: 5px;
+  display: inline-block;
+  transition: transform 0.3s;
+}
+
+.sidebar-nav .has-children.expanded > a::after {
+  content: "▴";
+  transform: rotate(180deg);
+}
+
+.sidebar-nav .has-children ul {
+  display: none;
+}
+
+.sidebar-nav .has-children.expanded > ul {
+  display: block;
+}
+
+.sidebar-nav .active > a {
+  font-weight: bold;
+  color: #35D7BB;
+  background-color: #f0f0f0;
+}
+
+/* 主内容区域调整 */
+#preview {
+  margin-left: 270px;
+  padding: 20px;
+}
+
+/* 回到顶部按钮 */
+.back-to-top {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: url('../resource/img/dror/微信图片_20250705200014.jpg') no-repeat center center;
+  background-size: cover;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  text-indent: -9999px; /* 隐藏文本 */
+  overflow: hidden;
+  opacity: 0.7;
+}
+
+.back-to-top:hover {
+  transform: translateY(-50%) scale(1.1);
+  opacity: 1;
+}
+
+/* 显示回到顶部按钮 */
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
