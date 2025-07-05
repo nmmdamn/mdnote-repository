@@ -30,82 +30,150 @@
 <p class="has-line-data" data-line-start="58" data-line-end="59"><img src="https://images.devcxj.xyz/noteimg/image-20250704201426666.png" alt="image-20250704201426666.png"></p>
 
 <style>
-    /* 侧边导航栏样式 */
-    .sidebar-nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100%;
-      background: #f8f9fa;
-      padding: 20px;
-      overflow-y: auto;
-      border-right: 1px solid #e3e3e3;
-      z-index: 1000;
-    }
-    
-    .sidebar-nav h3 {
-      margin-top: 0;
-      padding-bottom: 10px;
-      border-bottom: 1px solid #ddd;
-    }
-    
-    .sidebar-nav ul {
-      list-style: none;
-      padding-left: 10px;
-    }
-    
-    .sidebar-nav a {
-      display: block;
-      padding: 5px 10px;
-      color: #333;
-      text-decoration: none;
-    }
-    
-    .sidebar-nav a:hover {
-      background: #e9ecef;
-      border-radius: 5px;
-    }
-    
-    /* 主内容区域调整 */
-    #preview {
-      margin-left: 270px;
-      padding: 20px;
-    }
-  </style>
+  /* 侧边导航栏样式 */
+  .sidebar-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background: #f8f9fa;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #e3e3e3;
+    z-index: 1000;
+  }
   
-  <div class="sidebar-nav">
-    <h3>目录</h3>
-    <div id="toc"></div>
-  </div>
-        
-  <script>
+  .sidebar-nav h3 {
+    margin-top: 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .sidebar-nav ul {
+    list-style: none;
+    padding-left: 10px;
+  }
+  
+  .sidebar-nav a {
+    display: block;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .sidebar-nav a:hover {
+    background: #e9ecef;
+    border-radius: 5px;
+  }
+  
+  /* 主内容区域调整 */
+  #preview {
+    margin-left: 270px;
+    padding: 20px;
+  }
+  
+  /* 回到顶部按钮 */
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4a5261;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 46px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+  }
+  
+  .back-to-top:hover {
+    background: #35D7BB;
+  }
+  
+    /* 保持侧边栏可见，但隐藏"目录"项 */
+  .sidebar-nav li a:contains("目录") {
+    display: none;
+  }
+  
+  /* 或者使用更精确的选择器，假设这是最后一个链接 */
+  .sidebar-nav li:last-child {
+    display: none;
+  }
+</style>
+
+<div class="sidebar-nav">
+  <h3>目录</h3>
+  <div id="toc"></div>
+</div>
+
+<!-- 添加回到顶部按钮 -->
+<a href="#" class="back-to-top" title="回到顶部">↑</a>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
     // 生成目录导航
-    document.addEventListener('DOMContentLoaded', function() {
-      const headings = document.querySelectorAll('h2, h3, h4, h5');
-      const toc = document.getElementById('toc');
-      const ul = document.createElement('ul');
+    const headings = document.querySelectorAll('h2, h3, h4, h5');
+    const toc = document.getElementById('toc');
+    const ul = document.createElement('ul');
+    
+    headings.forEach(function(heading) {
+      // 为每个标题创建ID
+      if (!heading.id) {
+        heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
+      }
       
-      headings.forEach(function(heading) {
-        // 为每个标题创建ID
-        if (!heading.id) {
-          heading.id = heading.textContent.replace(/\s+/g, '-').toLowerCase();
-        }
-        
-        const li = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = '#' + heading.id;
-        a.textContent = heading.textContent;
-        
-        // 根据标题级别设置缩进
-        const level = parseInt(heading.tagName.substring(1)) - 2;
-        li.style.paddingLeft = (level * 10) + 'px';
-        
-        li.appendChild(a);
-        ul.appendChild(li);
-      });
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = '#' + heading.id;
+      a.textContent = heading.textContent;
       
-      toc.appendChild(ul);
+      // 根据标题级别设置缩进
+      const level = parseInt(heading.tagName.substring(1)) - 2;
+      li.style.paddingLeft = (level * 10) + 'px';
+      
+      li.appendChild(a);
+      ul.appendChild(li);
     });
-  </script>
+    
+    toc.appendChild(ul);
+    
+    // 回到顶部按钮功能
+    const backToTop = document.querySelector('.back-to-top');
+    backToTop.addEventListener('click', function(e) {
+      e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+		
+	 // 查找并隐藏侧边栏中内容为"目录"的链接项
+    document.querySelectorAll('.sidebar-nav li a').forEach(function(a) {
+      if (a.textContent.trim() === '目录') {
+        a.parentElement.style.display = 'none';
+      }
+    });
+        
+    // 替换所有"目录"文本为"回到顶部"
+    document.querySelectorAll('a').forEach(function(a) {
+      if (a.textContent.trim() === '目录' && !a.closest('.sidebar-nav')) {
+        a.textContent = '回到顶部 ↑';
+        a.href = '#';
+        a.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+    });
+  });
+</script>
 </body></html>
