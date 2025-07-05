@@ -1,2 +1,2 @@
 # mdnote-repository
-md笔记日常存储
+md notes daily storage.
