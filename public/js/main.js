@@ -42,17 +42,17 @@ document.addEventListener('DOMContentLoaded', async function() {
     // 硬编码已知的笔记和图片，避免依赖动态加载
     const backupNotes = [
       { 
-        file: 'windos局域网共享目录md.html', 
+        file: 'windos局域网共享目录.html',
         title: 'windos局域网共享目录',
         image: '微信图片_20250705195853.jpg'
       },
       { 
-        file: 'CloudflareR2图片服务配置笔记md.html', 
+        file: 'CloudflareR2图片服务配置笔记.html',
         title: 'CloudflareR2图片服务配置笔记',
         image: '微信图片_20250705200003.jpg'
       },
       { 
-        file: 'NginxStudymd.html', 
+        file: 'NginxStudy.html',
         title: 'Nginx Study',
         image: '微信图片_20250705200014.jpg'
       }
