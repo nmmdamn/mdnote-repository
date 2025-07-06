@@ -30,7 +30,7 @@
       <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Response(<span class="hljs-string">"请指定文件路径"</span>, { status: <span class="hljs-number">400</span> });
     }
     
-    <span class="hljs-comment">// 第5点：使用缓存API</span>
+    <span class="hljs-comment">// 优化设置第1点：使用缓存API</span>
     <span class="hljs-keyword">const</span> cacheKey = <span class="hljs-keyword">new</span> Request(url.toString(), request);
     <span class="hljs-keyword">const</span> cache = caches.default;
     
@@ -55,10 +55,10 @@
       <span class="hljs-comment">// 添加缓存控制头 - 一年的缓存时间</span>
       headers.set(<span class="hljs-string">"Cache-Control"</span>, <span class="hljs-string">"public, max-age=31536000"</span>);
       
-      <span class="hljs-comment">// 优化设置第1点：配置CORS头允许跨域请求</span>
+      <span class="hljs-comment">// 优化设置第2点：配置CORS头允许跨域请求</span>
       headers.set(<span class="hljs-string">"Access-Control-Allow-Origin"</span>, <span class="hljs-string">"*"</span>);
       
-      <span class="hljs-comment">// 优化设置第2点：启用压缩（注：图片通常已压缩，不需要额外Gzip，但这里为其他文件类型提供）</span>
+      <span class="hljs-comment">// 优化设置第3点：启用压缩（注：图片通常已压缩，不需要额外Gzip，但这里为其他文件类型提供）</span>
       <span class="hljs-comment">// 检查是否为可压缩内容类型</span>
       <span class="hljs-keyword">const</span> contentType = object.httpMetadata.contentType || <span class="hljs-string">""</span>;
       <span class="hljs-keyword">if</span> (contentType.includes(<span class="hljs-string">"text/"</span>) || 
