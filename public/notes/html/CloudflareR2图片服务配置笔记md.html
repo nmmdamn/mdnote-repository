@@ -18,9 +18,9 @@
 <li class="has-line-data" data-line-start="10" data-line-end="12">
 <p class="has-line-data" data-line-start="10" data-line-end="11">创建新Worker：从&quot;Hello World&quot;模板开始</p>
 </li>
-<li class="has-line-data" data-line-start="12" data-line-end="45">
+<li class="has-line-data" data-line-start="12" data-line-end="85">
 <p class="has-line-data" data-line-start="12" data-line-end="13">使用以下代码替换默认代码：</p>
-<pre><code class="has-line-data" data-line-start="15" data-line-end="45" class="language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+<pre><code class="has-line-data" data-line-start="15" data-line-end="85" class="language-javascript"><span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
   <span class="hljs-keyword">async</span> fetch(request, env) {
     <span class="hljs-keyword">const</span> url = <span class="hljs-keyword">new</span> URL(request.url);
     <span class="hljs-keyword">const</span> objectKey = url.pathname.slice(<span class="hljs-number">1</span>); <span class="hljs-comment">// 移除开头的斜杠</span>
@@ -30,6 +30,16 @@
       <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Response(<span class="hljs-string">"请指定文件路径"</span>, { status: <span class="hljs-number">400</span> });
     }
     
+    <span class="hljs-comment">// 第5点：使用缓存API</span>
+    <span class="hljs-keyword">const</span> cacheKey = <span class="hljs-keyword">new</span> Request(url.toString(), request);
+    <span class="hljs-keyword">const</span> cache = caches.default;
+    
+    <span class="hljs-comment">// 尝试从缓存获取响应</span>
+    <span class="hljs-keyword">let</span> response = <span class="hljs-keyword">await</span> cache.match(cacheKey);
+    <span class="hljs-keyword">if</span> (response) {
+      <span class="hljs-keyword">return</span> response;
+    }
+          
     <span class="hljs-keyword">try</span> {
       <span class="hljs-comment">// 从R2获取对象</span>
       <span class="hljs-keyword">const</span> object = <span class="hljs-keyword">await</span> env.MY_BUCKET.get(objectKey);
@@ -37,13 +47,43 @@
       <span class="hljs-keyword">if</span> (!object) {
         <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Response(<span class="hljs-string">"找不到文件"</span>, { status: <span class="hljs-number">404</span> });
       }
-      
-      <span class="hljs-comment">// 设置适当的Content-Type</span>
+
+      <span class="hljs-comment">// 设置适当的Content-Type和缓存控制</span>
       <span class="hljs-keyword">const</span> headers = <span class="hljs-keyword">new</span> Headers();
       headers.set(<span class="hljs-string">"Content-Type"</span>, object.httpMetadata.contentType || <span class="hljs-string">"image/jpeg"</span>);
+
+      <span class="hljs-comment">// 添加缓存控制头 - 一年的缓存时间</span>
+      headers.set(<span class="hljs-string">"Cache-Control"</span>, <span class="hljs-string">"public, max-age=31536000"</span>);
       
+      <span class="hljs-comment">// 优化设置第1点：配置CORS头允许跨域请求</span>
+      headers.set(<span class="hljs-string">"Access-Control-Allow-Origin"</span>, <span class="hljs-string">"*"</span>);
+      
+      <span class="hljs-comment">// 优化设置第2点：启用压缩（注：图片通常已压缩，不需要额外Gzip，但这里为其他文件类型提供）</span>
+      <span class="hljs-comment">// 检查是否为可压缩内容类型</span>
+      <span class="hljs-keyword">const</span> contentType = object.httpMetadata.contentType || <span class="hljs-string">""</span>;
+      <span class="hljs-keyword">if</span> (contentType.includes(<span class="hljs-string">"text/"</span>) || 
+          contentType.includes(<span class="hljs-string">"application/javascript"</span>) || 
+          contentType.includes(<span class="hljs-string">"application/json"</span>)) {
+        headers.set(<span class="hljs-string">"Content-Encoding"</span>, <span class="hljs-string">"br"</span>);  <span class="hljs-comment">// 使用Brotli压缩</span>
+      }
+
+      <span class="hljs-comment">// 可选: 添加ETag以支持条件请求</span>
+      <span class="hljs-keyword">if</span> (object.etag) {
+        headers.set(<span class="hljs-string">"ETag"</span>, object.etag);
+      }
+
+      <span class="hljs-comment">// 可选: 添加Last-Modified</span>
+      <span class="hljs-keyword">if</span> (object.uploaded) {
+        headers.set(<span class="hljs-string">"Last-Modified"</span>, object.uploaded.toUTCString());
+      }
+
       <span class="hljs-comment">// 返回R2中的对象</span>
-      <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Response(object.body, { headers });
+      response = <span class="hljs-keyword">new</span> Response(object.body, { headers });
+      
+      <span class="hljs-comment">// 将响应存入缓存</span>
+      <span class="hljs-keyword">await</span> cache.put(cacheKey, response.clone());
+      
+      <span class="hljs-keyword">return</span> response;
     } <span class="hljs-keyword">catch</span> (error) {
       <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> Response(<span class="hljs-string">"服务器错误: "</span> + error, { status: <span class="hljs-number">500</span> });
     }
