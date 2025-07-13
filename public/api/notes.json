@@ -1,7 +1,7 @@
 [
   { 
-    "file": "windos局域网共享目录.html", 
-    "title": "windos局域网共享目录",
+    "file": "Windos局域网共享目录.html",
+    "title": "Windos局域网共享目录",
     "image": "微信图片_20250705195853.jpg"
   },
   { 
@@ -18,5 +18,15 @@
     "file": "Workers绑定GitHub部署静态资源项目.html",
     "title": "Workers绑定GitHub部署静态资源项目",
     "image": "微信图片_20250706173232.jpg"
+  },
+  {
+    "file": "Windows配置固定IPv4地址指南.html",
+    "title": "Windows配置固定IPv4地址指南",
+    "image": "微信图片_20250705195952.jpg"
+  },
+  {
+    "file": "Swagger文档分离教程.html",
+    "title": "Swagger文档分离教程",
+    "image": "doroandcat1751810561189.jpg"
   }
 ] 

@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7a86255b-fed3-4024-8a84-5cea02c37927" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/mdnote-repository.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/notes/html/Workers绑定GitHub部署静态资源项目.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173129.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173208.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173214.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173227.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173232.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173239.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173244.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173249.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/resource/img/dror/微信图片_20250706173255.jpg" afterDir="false" />
+    <list default="true" id="cd323ae1-aff4-4629-ad91-777d79107faa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/api/notes.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/notes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notes/html/CloudflareR2图片服务配置笔记md.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/CloudflareR2图片服务配置笔记.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notes/html/NginxStudymd.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/NginxStudy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notes/html/windos局域网共享目录md.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/windos局域网共享目录.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/CloudflareR2图片服务配置笔记.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/CloudflareR2图片服务配置笔记.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/NginxStudy.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/NginxStudy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/Workers绑定GitHub部署静态资源项目.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/Workers绑定GitHub部署静态资源项目.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/windos局域网共享目录.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +18,11 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -49,7 +39,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
-  <component name="ProjectId" id="2zUmax5seuT56GevYg9HmDsLXYE" />
+  <component name="ProjectId" id="2zp5qEzornRy2Qt1pzkHsGy1fnZ" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -58,34 +48,47 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/IDEAEXC/mdnote-repository/public/notes/html",
+    "last_opened_file_path": "E:/IDEAEXC/mdnote-repository/public/resource/img/dror",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "MavenSettings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEAEXC\mdnote-repository\public\notes\html" />
       <recent name="E:\IDEAEXC\mdnote-repository\public\resource\img\dror" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\notes" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\api" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7a86255b-fed3-4024-8a84-5cea02c37927" name="Changes" comment="" />
+      <changelist id="cd323ae1-aff4-4629-ad91-777d79107faa" name="Changes" comment="" />
       <created>1713498433422</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713498433422</updated>
-      <workItem from="1751794094077" duration="1250000" />
+      <workItem from="1752415363868" duration="882000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
