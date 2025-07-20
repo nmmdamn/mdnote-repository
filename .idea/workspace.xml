@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd323ae1-aff4-4629-ad91-777d79107faa" name="Changes" comment="新增两个doro图片,一个ClashVerge代理工具使用教程.html笔记">
+    <list default="true" id="cd323ae1-aff4-4629-ad91-777d79107faa" name="Changes" comment="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/api/notes.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/notes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/SRS流媒体服务器Docker部署指南.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/Windows安装FFmpeg完整指南.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/Windows安装FFmpeg完整指南.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/IDEAEXC/mdnote-repository/public/notes/html",
+    "last_opened_file_path": "E:/IDEAEXC/mdnote-repository/public/resource/img/dror",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,8 +61,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\IDEAEXC\mdnote-repository\public\notes\html" />
       <recent name="E:\IDEAEXC\mdnote-repository\public\resource\img\dror" />
+      <recent name="E:\IDEAEXC\mdnote-repository\public\notes\html" />
       <recent name="E:\IDEAEXC\mdnote-repository\public\notes" />
       <recent name="E:\IDEAEXC\mdnote-repository\public\api" />
     </key>
@@ -75,7 +77,7 @@
       <updated>1713498433422</updated>
       <workItem from="1752415363868" duration="1925000" />
       <workItem from="1752427283953" duration="2182000" />
-      <workItem from="1752980470165" duration="1869000" />
+      <workItem from="1752980470165" duration="3869000" />
     </task>
     <task id="LOCAL-00001" summary="新增doro图片,新增Swagger文档分离教程,Windows配置固定IPv4地址指南html笔记">
       <option name="closed" value="true" />
@@ -93,7 +95,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752428004876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记">
+      <option name="closed" value="true" />
+      <created>1752984458395</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752984458397</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="新增doro图片,新增Swagger文档分离教程,Windows配置固定IPv4地址指南html笔记" />
     <MESSAGE value="新增两个doro图片,一个ClashVerge代理工具使用教程.html笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增两个doro图片,一个ClashVerge代理工具使用教程.html笔记" />
+    <MESSAGE value="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记" />
   </component>
 </project>
