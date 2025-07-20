@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd323ae1-aff4-4629-ad91-777d79107faa" name="Changes" comment="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记">
+    <list default="true" id="cd323ae1-aff4-4629-ad91-777d79107faa" name="Changes" comment="修改win安装ffmpeg部分多余指令，srs流媒体服务器Docker部署新增docker指令和修正启动版本指令，新增win安装DockerDesktop 安装教程,新增了doro图片">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/api/notes.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/api/notes.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notes/html/SRS流媒体服务器Docker部署指南.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/notes/html/Windows安装FFmpeg完整指南.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/Windows安装FFmpeg完整指南.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/SRS流媒体服务器Docker部署指南.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/SRS流媒体服务器Docker部署指南.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/notes/html/Windows安装DockerDesktop完全指南.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/notes/html/Windows安装DockerDesktop完全指南.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +76,7 @@
       <updated>1713498433422</updated>
       <workItem from="1752415363868" duration="1925000" />
       <workItem from="1752427283953" duration="2182000" />
-      <workItem from="1752980470165" duration="3869000" />
+      <workItem from="1752980470165" duration="4126000" />
     </task>
     <task id="LOCAL-00001" summary="新增doro图片,新增Swagger文档分离教程,Windows配置固定IPv4地址指南html笔记">
       <option name="closed" value="true" />
@@ -103,7 +102,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752984458397</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改win安装ffmpeg部分多余指令，srs流媒体服务器Docker部署新增docker指令和修正启动版本指令，新增win安装DockerDesktop 安装教程,新增了doro图片">
+      <option name="closed" value="true" />
+      <created>1753007208392</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753007208393</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="新增doro图片,新增Swagger文档分离教程,Windows配置固定IPv4地址指南html笔记" />
     <MESSAGE value="新增两个doro图片,一个ClashVerge代理工具使用教程.html笔记" />
     <MESSAGE value="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增一个doro图片,SRS流媒体服务器Docker部署指南.html和Windows安装FFmpeg完整指南.html笔记" />
+    <MESSAGE value="修改win安装ffmpeg部分多余指令，srs流媒体服务器Docker部署新增docker指令和修正启动版本指令，新增win安装DockerDesktop 安装教程,新增了doro图片" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改win安装ffmpeg部分多余指令，srs流媒体服务器Docker部署新增docker指令和修正启动版本指令，新增win安装DockerDesktop 安装教程,新增了doro图片" />
   </component>
 </project>
